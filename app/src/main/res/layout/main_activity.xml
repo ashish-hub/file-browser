@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:id="@+id/linearLayout">
+
+    <!--<VideoView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/videoView"/>-->
+    <Button
+            android:text="Go To Main App"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:layout_marginTop="700dp"
+            android:textColor="#ffffff"
+            android:background="#ff0000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/button"/>
+</LinearLayout>

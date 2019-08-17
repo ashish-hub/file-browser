@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/linearLayout2">
+        <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp" android:src="@drawable/option" android:id="@+id/imageView5"
+                android:layout_weight="1"/>
+        <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp" android:src="@drawable/timeblack" android:id="@+id/imageView6"
+                android:layout_weight="1"/>
+        <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp" android:src="@drawable/folderblack" android:id="@+id/imageView7"
+                android:layout_weight="1"/>
+        <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp" android:src="@drawable/searchblack" android:id="@+id/imageView8"
+                android:layout_weight="1"/>
+    </LinearLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout app:layout_constraintBottom_toBottomOf="parent"
+                                                         app:layout_constraintEnd_toEndOf="parent"
+                                                         app:layout_constraintStart_toStartOf="parent"
+                                                         android:layout_width="0dp"
+                                                         android:layout_height="wrap_content"
+                                                         android:id="@+id/coordinatorLayout">
+        <com.google.android.material.bottomappbar.BottomAppBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+                android:layout_gravity="bottom"
+                android:id="@+id/bottomAppBar" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+        />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="0dp"
+            android:layout_height="87dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/coordinatorLayout" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/bottomNavigationView"/>
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView" android:id="@+id/recyclerView"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
